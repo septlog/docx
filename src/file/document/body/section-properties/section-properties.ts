@@ -76,12 +76,12 @@ export interface ISectionPropertiesOptions {
 // </xsd:group>
 
 export const sectionMarginDefaults = {
-    TOP: "1in",
-    RIGHT: "1in",
-    BOTTOM: "1in",
-    LEFT: "1in",
-    HEADER: 708,
-    FOOTER: 708,
+    TOP: 1440,
+    RIGHT: 1800,
+    BOTTOM: 1440,
+    LEFT: 1800,
+    HEADER: 851,
+    FOOTER: 992,
     GUTTER: 0,
 };
 

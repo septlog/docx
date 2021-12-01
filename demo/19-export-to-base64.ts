@@ -26,5 +26,5 @@ const doc = new Document({
 });
 
 Packer.toBase64String(doc).then((str) => {
-    fs.writeFileSync("My Document.docx", str);
+    fs.writeFileSync("C:/Users/septlog/Documents/__2007/Demo.docx", str);
 });

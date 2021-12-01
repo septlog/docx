@@ -10,7 +10,7 @@ This will return a NodeJS `Buffer`. If this is used in the browser, it will retu
 
 ```ts
 Packer.toBuffer(doc).then((buffer) => {
-    fs.writeFileSync("My Document.docx", buffer);
+    fs.writeFileSync("C:/Users/septlog/Documents/__2007/Demo.docx", buffer);
 });
 ```
 

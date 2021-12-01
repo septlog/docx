@@ -1,8 +1,8 @@
-const path = require("path");
-const { ProvidePlugin } = require("webpack");
+import path from 'path'
+import {ProvidePlugin} from 'webpack'
 
 const configuration = {
-    mode: "production",
+    mode: "development",
 
     entry: "./src/index.ts",
 
@@ -43,4 +43,4 @@ const configuration = {
     ],
 };
 
-module.exports = configuration;
+export default configuration;

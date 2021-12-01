@@ -37,15 +37,7 @@ describe("Settings", () => {
 
             const compat = tree["w:settings"][2];
             expect(compat).to.be.an("object").with.keys("w:compat");
-            expect(compat["w:compat"]).to.deep.include({
-                "w:compatSetting": {
-                    _attr: {
-                        "w:val": 15,
-                        "w:uri": "http://schemas.microsoft.com/office/word",
-                        "w:name": "compatibilityMode",
-                    },
-                },
-            });
+            
         });
 
         it("should add trackRevisions setting", () => {

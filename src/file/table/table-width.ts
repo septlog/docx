@@ -37,11 +37,6 @@ class TableWidthAttributes extends XmlAttributeComponent<ITableWidthProperties> 
 export class TableWidthElement extends XmlComponent {
     constructor(name: string, { type = WidthType.AUTO, size }: ITableWidthProperties) {
         super(name);
-        // super("w:tblW");
-        let tableWidthValue = size;
-        if (type === WidthType.PERCENTAGE && typeof size === "number") {
-            tableWidthValue = `${size}%`;
-        }
-        this.root.push(new TableWidthAttributes({ type: type, size: measurementOrPercentValue(tableWidthValue) }));
+        this.root.push(new TableWidthAttributes({ type: type, size: measurementOrPercentValue(size) }));
     }
 }

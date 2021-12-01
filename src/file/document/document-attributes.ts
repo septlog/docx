@@ -24,6 +24,7 @@ export interface IDocumentAttributesProperties {
     readonly dcmitype?: string;
     readonly xsi?: string;
     readonly type?: string;
+    readonly ve?:string;
 }
 
 export class DocumentAttributes extends XmlAttributeComponent<IDocumentAttributesProperties> {
@@ -51,5 +52,6 @@ export class DocumentAttributes extends XmlAttributeComponent<IDocumentAttribute
         dcmitype: "xmlns:dcmitype",
         xsi: "xmlns:xsi",
         type: "xsi:type",
+        ve: "xmlns:ve",
     };
 }

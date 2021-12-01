@@ -1,5 +1,5 @@
-import * as JSZip from "jszip";
-import * as xml from "xml";
+import  JSZip from "jszip";
+import  xml from "xml";
 
 import { File } from "file";
 import { Formatter } from "../formatter";

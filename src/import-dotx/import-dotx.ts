@@ -1,4 +1,4 @@
-import * as JSZip from "jszip";
+import JSZip from "jszip";
 import { Element as XMLElement, ElementCompact as XMLElementCompact, xml2js } from "xml-js";
 
 import { HeaderFooterReferenceType } from "file/document/body/section-properties";

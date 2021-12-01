@@ -1,23 +1,28 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "strictNullChecks": true,
-        "sourceMap": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "outDir": "./build",
-        "rootDir": "./src",
-        "module": "es6",
-        "moduleResolution": "node",
-        "declaration": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "baseUrl": "./src",
-        "paths": {
-            "convenience-functions": ["./convenience-functions"],
-            "@export/*": ["./export/*"],
-            "file/*": ["./file/*"]
-        }
+  "compilerOptions": {
+    "target": "es6",
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "module": "es6",
+    "moduleResolution": "node",
+    "declaration": true,
+    "baseUrl": "./src",
+    "paths": {
+      "convenience-functions": ["./convenience-functions"],
+      "export/*": ["./export/*"],
+      "file/*": ["./file/*"]
     },
-    "include": ["src"]
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["src"]
 }
